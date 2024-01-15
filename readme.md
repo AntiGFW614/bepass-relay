@@ -45,7 +45,7 @@ git clone https://github.com/bepass-org/bepass-relay.git
 cd bepass-relay
 go run *.go -b 0.0.0.0 -p 6666 
 ```
-important: 0.0.0.0 is your ip
+important: 0.0.0.0 is your ip or your domain(Your CDN should be turned off)
 
 Then press ctrl+b and then d. Then go to your cloudflare dashboard and open your worker with **Quick dit** button. Then change the following lines:
 
@@ -56,7 +56,7 @@ const proxyIPs = ['<Your IP goes here>'];
 const proxyPort = 6666;
 let proxyIP = proxyIPs[Math.floor(Math.random() * proxyIPs.length)];
 ```
-you can import your domain in your worker
+you can import your domain in your worker(Your CDN should be turned off)
 
 for example: const proxyIPs= ['<example.com'];
 
