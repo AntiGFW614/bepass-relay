@@ -48,6 +48,7 @@ go run *.go -b 0.0.0.0 -p 6666
 important: 0.0.0.0 is your ip
 
 Then press ctrl+b and then d. Then go to your cloudflare dashboard and open your worker with **Quick dit** button. Then change the following lines:
+
 importan: number of line is 4648-4649-4650
 
 ```js  
@@ -56,7 +57,9 @@ const proxyPort = 6666;
 let proxyIP = proxyIPs[Math.floor(Math.random() * proxyIPs.length)];
 ```
 you can import your domain in your worker
+
 for example: const proxyIPs= ['<example.com'];
+
 Then test that your worker works as intended.
 
 ## How to Share My Node? (Becoming a Volunteer Maintainer)
