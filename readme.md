@@ -56,9 +56,9 @@ const proxyIPs = ['<Your IP goes here>'];
 const proxyPort = 6666;
 let proxyIP = proxyIPs[Math.floor(Math.random() * proxyIPs.length)];
 ```
-you can import your domain in your worker(Your CDN should be turned off)
+you can import your domain in your worker(Now you can turn on CDN)
 
-for example: const proxyIPs= ['<example.com'];
+for example: const proxyIPs= ['sub.example.com'];
 
 Then test that your worker works as intended.
 
